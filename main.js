@@ -36,7 +36,7 @@ function init() {
     controls.update();
     // デクスチャを追加
     let textures = new THREE.TextureLoader().load("./textures/earth.jpg");
-    // 形を生成
+    // 形を生成・物体の形状を表す物（球体・立方体・）
     let ballGeo = new THREE.SphereGeometry(100, 64, 32);
     // 柄・材質を設定
     let ballMaterial = new THREE.MeshPhysicalMaterial({
